@@ -38,7 +38,7 @@ const getNavigationLinkPages = pMemoize(
   }
 )
 
-const cacheTTL = 24*60*60*1000; //1 day
+const cacheTTL = 60*60*1000; // 1 hr
 
 export async function getPage(pageId: string): Promise<ExtendedRecordMap> {
   const cacheKey = `page-records:${pageId}`;
