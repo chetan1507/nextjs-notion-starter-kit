@@ -119,7 +119,7 @@ export async function getStaticPaths() {
         const paths = propertyToFilterSchema.options
           .map((option) => normalizeTitle(option.value))
           .filter(Boolean)
-          .map((slug) => `/tags/${slug}`)
+          .map((slug) => `/tag/${slug}`)
 
         return {
           paths,
